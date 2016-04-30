@@ -1,0 +1,27 @@
+TRUNCATE amedeodateagg;
+TRUNCATE anagrafiche;
+TRUNCATE effetti;
+TRUNCATE infanagrafiche;
+TRUNCATE infeffetti;
+TRUNCATE logelab;
+TRUNCATE strcodcomnas;
+TRUNCATE strcodcomres;
+TRUNCATE strcodfisc;
+TRUNCATE strcodiceregione;
+TRUNCATE strcodprvres;
+TRUNCATE strdatnas;
+TRUNCATE strindir03;
+TRUNCATE strindir06;
+TRUNCATE strindir10;
+TRUNCATE strindir15;
+TRUNCATE strindir20;
+TRUNCATE strnomi03;
+TRUNCATE strnomi04;
+TRUNCATE strnomi05;
+TRUNCATE strnomi06;
+TRUNCATE strnomi07;
+TRUNCATE strnomi08;
+TRUNCATE strnomi10;
+TRUNCATE strnomi15;
+TRUNCATE strnomi20;
+

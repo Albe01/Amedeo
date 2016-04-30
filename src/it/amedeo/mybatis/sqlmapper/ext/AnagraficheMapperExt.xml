@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="it.amedeo.mybatis.javaclient.ext.AnagraficheMapperExt">
+
+    <!--
+      SQL PERSONALIZZATO 
+	-->    
+	<!-- 
+  <select id="selectIn" parameterType="java.util.Map" resultMap="it.amedeo.mybatis.javaclient.AnagraficheMapper.BaseResultMap">  
+    select 
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="it.amedeo.mybatis.javaclient.AnagraficheMapper.Base_Column_List" />
+    from ANAGRAFICHE an WHERE 
+    (1 = 1)
+  	<if test="nomi03_01 != null">
+    	AND (an.kanagra in (select kanagra from strnomi03 where parola = #{nomi03_01}))
+  	</if>
+  	<if test="nomi03_02 != null">
+    	AND (an.kanagra in (select kanagra from strnomi03 where parola = #{nomi03_02}))
+  	</if>
+  	<if test="nomi05_01 != null">
+    	AND (an.kanagra in (select kanagra from strnomi05 where parola = #{nomi05_01}))
+  	</if>
+  	<if test="nomi07_01 != null">
+    	AND (an.kanagra in (select kanagra from strnomi07 where parola = #{nomi07_01}))
+  	</if>
+  	<if test="nomi10_01 != null">
+    	AND (an.kanagra in (select kanagra from strnomi10 where parola = #{nomi10_01}))
+  	</if>  	
+  	<if test="groupby != null">
+    	group by #{groupby}
+  	</if>
+  </select>
+ -->
+
+<!-- 
+		Map<String,Object> map =  new HashMap<String,Object>() ;
+        List<String> list =  new ArrayList<String>();
+        
+        list.add("COPEREDIL");
+        map.put("strnomi10", list);
+        
+        list =  new ArrayList<String>();
+        list.add("SNC");
+        list.add("DI");
+		map.put("strnomi03", list);
+		
+		list =  new ArrayList<String>();
+        list.add("CURRELI");
+		map.put("strnomi07", list);
+		
+		list =  new ArrayList<String>();
+        list.add("F.LLI");
+		map.put("strnomi05", list);
+ -->
+  <select id="selectIn" parameterType="map" resultMap="it.amedeo.mybatis.javaclient.AnagraficheMapper.BaseResultMap">    
+    select distinct * from ANAGRAFICHE an where (1=1)
+	<if test="strnomi03 != null">    
+		<foreach collection="strnomi03" index="key" item="entry">  
+	    	AND (an.kanagra in (select n03.kanagra from strnomi03 n03 where n03.parola = #{entry}))	
+		</foreach>
+	</if>
+	<if test="strnomi04 != null">
+		<foreach collection="strnomi04" index="key" item="entry">  
+    		AND (an.kanagra in (select n04.kanagra from strnomi04 n04 where n04.parola = #{entry}))
+		</foreach>	
+	</if>
+	<if test="strnomi05 != null">	
+		<foreach collection="strnomi05" index="key" item="entry">  
+	    	AND (an.kanagra in (select n05.kanagra from strnomi05 n05 where n05.parola = #{entry}))	
+		</foreach>
+	</if>
+	<if test="strnomi06 != null">	
+		<foreach collection="strnomi06" index="key" item="entry">  
+	    	AND (an.kanagra in (select n06.kanagra from strnomi06 n06 where n06.parola = #{entry}))	
+		</foreach>
+	</if>
+	<if test="strnomi07 != null">
+		<foreach collection="strnomi07" index="key" item="entry">  
+	    	AND (an.kanagra in (select n07.kanagra from strnomi07 n07 where n07.parola = #{entry}))	
+		</foreach>
+	</if>
+	<if test="strnomi08 != null">
+		<foreach collection="strnomi08" index="key" item="entry">  
+	    	AND (an.kanagra in (select n08.kanagra from strnomi08 n08 where n08.parola = #{entry}))	
+		</foreach>
+	</if>
+	<if test="strnomi10 != null">
+		<foreach collection="strnomi10" index="key" item="entry">  
+	    	AND (an.kanagra in (select n10.kanagra from strnomi10 n10 where n10.parola = #{entry}))	
+		</foreach>
+	</if>
+	<if test="strnomi15 != null">
+		<foreach collection="strnomi15" index="key" item="entry">  
+	    	AND (an.kanagra in (select n15.kanagra from strnomi15 n15 where n15.parola = #{entry}))	
+		</foreach>
+	</if>
+	<if test="strnomi20 != null">
+		<foreach collection="strnomi20" index="key" item="entry">  
+	    	AND (an.kanagra in (select n20.kanagra from strnomi20 n20 where n20.parola = #{entry}))	
+		</foreach>
+	</if>
+</select>
+
+
+
+  <select id="selectLimit" parameterType="java.util.Map" resultMap="it.amedeo.mybatis.javaclient.AnagraficheMapper.BaseResultMap">
+    select * from anagrafiche use index (idx01) where flgcan = '0' and codregioneres is not null 
+    	LIMIT #{offset}, #{maxNbOfRows}
+  </select>
+
+  <select id="selectKanagra" parameterType="java.util.Map" resultMap="it.amedeo.mybatis.javaclient.AnagraficheMapper.BaseResultMap">
+    select kanagra from anagrafiche use index (idx01) where codregioneres = #{codregioneres} 
+  </select>
+
+  <select id="selectAnagra" parameterType="java.util.Map" resultMap="it.amedeo.mybatis.javaclient.AnagraficheMapper.BaseResultMap">
+<!--   <select id="selectAnagra" parameterType="java.util.Map" resultType="it.amedeo.mybatis.javamodel.Anagrafiche">  -->  
+    select * from anagrafiche  where kanagra = #{kanagra} 
+  </select>
+
+	<select id="selectPippo">
+		SELECT * into outfile 'D:/FileInfoCam/DBpippo.txt' FIELDS TERMINATED BY '|' FROM infcomuni
+	</select>
+
+</mapper>

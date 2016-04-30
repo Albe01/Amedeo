@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="it.amedeo.mybatis.javaclient.ext.StrindirMapperExt">
+
+  <insert id="insertTab" parameterType="java.util.Map">
+    insert into ${tableName} (kanagra, parola, datatimeins, dateflusso)
+    	values (#{kanagra,jdbcType=BIGINT}, #{parola,jdbcType=VARCHAR}, #{datatimeins,jdbcType=VARCHAR}, #{dateflusso,jdbcType=VARCHAR})
+  </insert>
+
+
+</mapper>

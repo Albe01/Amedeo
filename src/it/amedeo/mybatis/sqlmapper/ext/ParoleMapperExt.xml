@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="it.amedeo.mybatis.javaclient.ext.ParoleMapperExt">
+
+	<select id="selectDynamic" parameterType="java.util.Map" resultMap="it.amedeo.mybatis.javaclient.ParoleMapper.BaseResultMap">
+    	select p1.progressivo from parole as p1 ${stringa}
+    </select>
+    
+  	<select id="selectLimit" parameterType="java.util.Map" resultMap="it.amedeo.mybatis.javaclient.ParoleMapper.BaseResultMap">
+		select * from parole use index (PRIMARY) 
+			order by `tipoparola`, `parola`, `codiceregione`, `progressivo` 
+			LIMIT #{offset}, #{maxNbOfRows}
+  	</select>
+  	
+</mapper>

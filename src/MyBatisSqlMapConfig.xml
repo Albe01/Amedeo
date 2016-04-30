@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/amedeo" />
+				<property name="username" value="root" />
+				<property name="password" value="" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="it/amedeo/mybatis/sqlmapper/AnagraficheMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/EffettiMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/InfAnagraficheMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/InfEffettiMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/ParoleMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/StrcodcomnasMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/StrcodcomresMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/StrcodfiscMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/StrcodiceregioneMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/StrcodprvresMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/StrdatnasMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strindir03Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strindir06Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strindir10Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strindir15Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strindir20Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strnomi03Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strnomi04Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strnomi05Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strnomi06Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strnomi07Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strnomi08Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strnomi10Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strnomi15Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/Strnomi20Mapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/LogelabMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/InfcomuniMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/SarsycMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/SaranMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/SarinMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/SarprMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/SarapMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/SarsyaMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/InfcomuninewMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/RegprvMapper.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/AmedeodateaggMapper.xml" />
+
+
+		<mapper resource="it/amedeo/mybatis/sqlmapper/ext/StrnomiMapperExt.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/ext/StrindirMapperExt.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/ext/AnagraficheMapperExt.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/ext/ParoleMapperExt.xml" />
+		<mapper resource="it/amedeo/mybatis/sqlmapper/ext/EffettiMapperExt.xml" />
+
+	</mappers>
+</configuration>
