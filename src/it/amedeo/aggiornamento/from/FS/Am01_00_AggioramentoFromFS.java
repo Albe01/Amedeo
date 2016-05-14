@@ -42,8 +42,8 @@ public class Am01_00_AggioramentoFromFS {
 	public static void main(String[] args) throws IOException {
 		
 		args = new String[2];		
-		args[0] = "D:\\Google Drive\\FileInfoCam\\INFOCAMERE1601\\INFANA01";
-		args[1] = "D:\\Google Drive\\FileInfoCam\\INFOCAMERE1601\\INFEFF01";
+		args[0] = "D:\\Google Drive\\FileInfoCam\\INFOCAMERE1505\\INFANA01";
+		args[1] = "D:\\Google Drive\\FileInfoCam\\INFOCAMERE1505\\INFEFF01";
 		
 		if (args.length<1){
 			System.out.println("\nParametri in input mancanti.\nEsecuzione interrotta.");

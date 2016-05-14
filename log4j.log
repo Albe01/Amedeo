@@ -1,152 +1,382 @@
-[2016-04-21 15:30:21,152]DEBUG604855[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,152]DEBUG604855[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 597062407(Long), VV(String), 20160310(String), 20160120(String), VV(String), VV023(String), (String), (String), A(String), 8022.0(Double), EU(String), 0.0(Double), (String), A20(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,153]DEBUG604856[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,153]DEBUG604856[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,153]DEBUG604856[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 597062407(Long)
-  [2016-04-21 15:30:21,154]DEBUG604857[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,154]DEBUG604857[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ?, dataprimoeff = ?, dataulteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,154]DEBUG604857[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Integer), 8022.0(Double), 20160310(String), 20160310(String), 597062407(Long)
-  [2016-04-21 15:30:21,155]DEBUG604858[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,155]DEBUG604858[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,155]DEBUG604858[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 537922897(Long), VV(String), 20160310(String), 20160120(String), VV(String), VV047(String), (String), (String), A(String), 5022.33(Double), EU(String), 0.0(Double), (String), A12(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,156]DEBUG604859[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,156]DEBUG604859[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,156]DEBUG604859[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 537922897(Long)
-  [2016-04-21 15:30:21,157]DEBUG604860[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,157]DEBUG604860[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,157]DEBUG604860[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 11(Integer), 79245.89(Double), 537922897(Long)
-  [2016-04-21 15:30:21,158]DEBUG604861[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,158]DEBUG604861[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,158]DEBUG604861[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 537922897(Long), VV(String), 20160310(String), 20160120(String), VV(String), VV047(String), (String), (String), A(String), 4986.12(Double), EU(String), 0.0(Double), (String), A12(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,158]DEBUG604861[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,158]DEBUG604861[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,159]DEBUG604862[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 537922897(Long)
-  [2016-04-21 15:30:21,159]DEBUG604862[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,159]DEBUG604862[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,160]DEBUG604863[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 12(Integer), 84232.01(Double), 537922897(Long)
-  [2016-04-21 15:30:21,160]DEBUG604863[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,160]DEBUG604863[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,160]DEBUG604863[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 27194819(Long), VV(String), 20160310(String), 20160122(String), VV(String), VV037(String), 20160120(String), (String), C(String), 700.0(Double), EU(String), 0.0(Double), (String), CB1(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,161]DEBUG604864[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,161]DEBUG604864[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,161]DEBUG604864[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 27194819(Long)
-  [2016-04-21 15:30:21,162]DEBUG604865[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,162]DEBUG604865[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,162]DEBUG604865[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 3(Integer), 2400.0(Double), 27194819(Long)
-  [2016-04-21 15:30:21,162]DEBUG604865[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,162]DEBUG604865[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,163]DEBUG604866[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 635391235(Long), VV(String), 20160310(String), 20160122(String), VV(String), VV047(String), 20160120(String), (String), C(String), 3000.0(Double), EU(String), 0.0(Double), (String), CB1(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,163]DEBUG604866[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,163]DEBUG604866[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,163]DEBUG604866[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 635391235(Long)
-  [2016-04-21 15:30:21,164]DEBUG604867[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,164]DEBUG604867[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,165]DEBUG604868[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 2(Integer), 4000.0(Double), 635391235(Long)
-  [2016-04-21 15:30:21,165]DEBUG604868[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,165]DEBUG604868[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,165]DEBUG604868[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 391909635(Long), VV(String), 20160310(String), 20160122(String), VV(String), VV044(String), 20160120(String), (String), C(String), 1000.0(Double), EU(String), 0.0(Double), (String), CM1(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,166]DEBUG604869[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,166]DEBUG604869[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,166]DEBUG604869[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 391909635(Long)
-  [2016-04-21 15:30:21,167]DEBUG604870[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,167]DEBUG604870[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ?, dataprimoeff = ?, dataulteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,167]DEBUG604870[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Integer), 1000.0(Double), 20160310(String), 20160310(String), 391909635(Long)
-  [2016-04-21 15:30:21,168]DEBUG604871[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,168]DEBUG604871[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,168]DEBUG604871[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 334259759(Long), VV(String), 20160310(String), 20160122(String), VV(String), VV025(String), 20160120(String), (String), C(String), 250.0(Double), EU(String), 0.0(Double), (String), CM1(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,169]DEBUG604872[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,169]DEBUG604872[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,169]DEBUG604872[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 334259759(Long)
-  [2016-04-21 15:30:21,170]DEBUG604873[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,170]DEBUG604873[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ?, dataprimoeff = ?, dataulteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,170]DEBUG604873[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Integer), 250.0(Double), 20160310(String), 20160310(String), 334259759(Long)
-  [2016-04-21 15:30:21,171]DEBUG604874[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,171]DEBUG604874[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,171]DEBUG604874[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 224602081(Long), VV(String), 20160310(String), 20160122(String), VV(String), VV007(String), 20160120(String), (String), C(String), 137.38(Double), EU(String), 0.0(Double), (String), CM1(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,171]DEBUG604874[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,172]DEBUG604875[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,172]DEBUG604875[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 224602081(Long)
-  [2016-04-21 15:30:21,172]DEBUG604875[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,172]DEBUG604875[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ?, dataprimoeff = ?, dataulteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,173]DEBUG604876[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Integer), 137.38(Double), 20160310(String), 20160310(String), 224602081(Long)
-  [2016-04-21 15:30:21,173]DEBUG604876[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,173]DEBUG604876[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,173]DEBUG604876[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 270776190(Long), VV(String), 20160310(String), 20160122(String), VV(String), VV032(String), 20160120(String), (String), C(String), 460.0(Double), EU(String), 0.0(Double), (String), CM1(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,174]DEBUG604877[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,174]DEBUG604877[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,174]DEBUG604877[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 270776190(Long)
-  [2016-04-21 15:30:21,175]DEBUG604878[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,175]DEBUG604878[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ?, dataprimoeff = ?, dataulteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,175]DEBUG604878[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Integer), 460.0(Double), 20160310(String), 20160310(String), 270776190(Long)
-  [2016-04-21 15:30:21,175]DEBUG604878[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,176]DEBUG604879[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,176]DEBUG604879[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 11909598(Long), VV(String), 20160310(String), 20160122(String), VV(String), VV047(String), 20160120(String), (String), C(String), 200.0(Double), EU(String), 0.0(Double), (String), CM1(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,176]DEBUG604879[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,176]DEBUG604879[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,177]DEBUG604880[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 11909598(Long)
-  [2016-04-21 15:30:21,177]DEBUG604880[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,177]DEBUG604880[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,177]DEBUG604880[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 3(Integer), 700.0(Double), 11909598(Long)
-  [2016-04-21 15:30:21,178]DEBUG604881[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,178]DEBUG604881[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,178]DEBUG604881[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 722252638(Long), VV(String), 20160310(String), 20160125(String), VV(String), VV047(String), 20160121(String), (String), C(String), 150.0(Double), EU(String), 0.0(Double), (String), CM1(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,179]DEBUG604882[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,179]DEBUG604882[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,179]DEBUG604882[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 722252638(Long)
-  [2016-04-21 15:30:21,179]DEBUG604882[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,180]DEBUG604883[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ?, dataprimoeff = ?, dataulteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,180]DEBUG604883[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Integer), 150.0(Double), 20160310(String), 20160310(String), 722252638(Long)
-  [2016-04-21 15:30:21,180]DEBUG604883[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,180]DEBUG604883[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,180]DEBUG604883[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 414526877(Long), VV(String), 20160310(String), 20160125(String), VV(String), VV044(String), 20160121(String), (String), C(String), 500.0(Double), EU(String), 0.0(Double), (String), CM1(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,181]DEBUG604884[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,181]DEBUG604884[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,181]DEBUG604884[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 414526877(Long)
-  [2016-04-21 15:30:21,182]DEBUG604885[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,182]DEBUG604885[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,182]DEBUG604885[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 4(Integer), 1800.0(Double), 414526877(Long)
-  [2016-04-21 15:30:21,182]DEBUG604885[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,183]DEBUG604886[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,183]DEBUG604886[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 793199287(Long), VV(String), 20160310(String), 20160125(String), VV(String), VV007(String), (String), (String), A(String), 15154.6(Double), EU(String), 0.0(Double), (String), A20(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,183]DEBUG604886[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,183]DEBUG604886[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,183]DEBUG604886[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 793199287(Long)
-  [2016-04-21 15:30:21,184]DEBUG604887[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,184]DEBUG604887[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,185]DEBUG604888[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 8(Integer), 59594.4(Double), 793199287(Long)
-  [2016-04-21 15:30:21,185]DEBUG604888[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,185]DEBUG604888[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,185]DEBUG604888[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 456506470(Long), VV(String), 20160310(String), 20160126(String), VV(String), VV007(String), (String), (String), A(String), 750.0(Double), EU(String), 0.0(Double), (String), A20(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,186]DEBUG604889[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,186]DEBUG604889[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,186]DEBUG604889[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 456506470(Long)
-  [2016-04-21 15:30:21,187]DEBUG604890[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,187]DEBUG604890[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ?, dataprimoeff = ?, dataulteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,187]DEBUG604890[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Integer), 750.0(Double), 20160310(String), 20160310(String), 456506470(Long)
-  [2016-04-21 15:30:21,188]DEBUG604891[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,188]DEBUG604891[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into effetti (progrriga, dateflusso, kanagra, cciaapubblicazione, dataiscrizione, datalevata, siglaprovincialevata, codicecomunelevata, datascadenza, tiposcadenza, tipoeffetto, importo, codicevaluta, importocorrente, codicevalutacorrente, codmotmancpag, statoeffetto, datatimeins) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-  [2016-04-21 15:30:21,188]DEBUG604891[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 201602201603(String), 644456648(Long), VV(String), 20160310(String), 20160126(String), VV(String), VV032(String), (String), (String), A(String), 1147.0(Double), EU(String), 0.0(Double), (String), A12(String), N(String), 20160421 152016(String)
-  [2016-04-21 15:30:21,189]DEBUG604892[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,189]DEBUG604892[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select kanagra, flgcan, dateflusso, nominativo, codicefiscale, codregioneres, codistatprvres, codistatcomres, codicestatoresidenza, siglaprovinciaresidenza, codicecomuneresidenza, indirizzoresidenza, datanascita, codicestatonascita, codistatprvnas, codistatcomnas, siglaprovincianascita, codicecomunenascita, luogonascita, numtoteff, imptoteff, dataprimoeff, dataulteff, datatimeins from anagrafiche where kanagra = ? 
-  [2016-04-21 15:30:21,189]DEBUG604892[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 644456648(Long)
-  [2016-04-21 15:30:21,189]DEBUG604892[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
-  [2016-04-21 15:30:21,190]DEBUG604893[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update anagrafiche SET numtoteff = ?, imptoteff = ? where kanagra = ? 
-  [2016-04-21 15:30:21,190]DEBUG604893[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 4(Integer), 6519.44(Double), 644456648(Long)
-  [2016-04-21 15:30:21,190]DEBUG604893[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,196]DEBUG604899[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into logelab (progrriga, datatime, pgmelab, riga) values (?, ?, ?, ?) 
-  [2016-04-21 15:30:21,196]DEBUG604899[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 2016/04/21 15:30:21(String), main(String), ----- FINE ELABORAZIONE EFFETTI -----(String)
-  [2016-04-21 15:30:21,196]DEBUG604899[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,202]DEBUG604905[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into logelab (progrriga, datatime, pgmelab, riga) values (?, ?, ?, ?) 
-  [2016-04-21 15:30:21,202]DEBUG604905[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 2016/04/21 15:30:21(String), main(String), Effetti letti...............: 55699(String)
-  [2016-04-21 15:30:21,203]DEBUG604906[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,208]DEBUG604911[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into logelab (progrriga, datatime, pgmelab, riga) values (?, ?, ?, ?) 
-  [2016-04-21 15:30:21,208]DEBUG604911[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 2016/04/21 15:30:21(String), main(String), Effetti inseriti............: 56197(String)
-  [2016-04-21 15:30:21,209]DEBUG604912[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,216]DEBUG604919[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into logelab (progrriga, datatime, pgmelab, riga) values (?, ?, ?, ?) 
-  [2016-04-21 15:30:21,216]DEBUG604919[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 2016/04/21 15:30:21(String), main(String), ----- FINE ELABORAZIONE -----(String)
-  [2016-04-21 15:30:21,217]DEBUG604920[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
-  [2016-04-21 15:30:21,217]DEBUG604920[main] - org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:71) - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@77ec78b9]
-  [2016-04-21 15:30:21,218]DEBUG604921[main] - org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:124) - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77ec78b9]
-  [2016-04-21 15:30:21,218]DEBUG604921[main] - org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:92) - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@77ec78b9]
-  [2016-04-21 15:30:21,219]DEBUG604922[main] - org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:344) - Returned connection 2011986105 to pool.
+[2016-05-04 18:34:05,112]DEBUG388436[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150828(String), 20160411(String), OR(String)
+  [2016-05-04 18:34:05,113]DEBUG388437[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,113]DEBUG388437[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,113]DEBUG388437[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: GO(String)
+  [2016-05-04 18:34:05,114]DEBUG388438[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,122]DEBUG388446[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,123]DEBUG388447[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150911(String), 20160411(String), GO(String)
+  [2016-05-04 18:34:05,123]DEBUG388447[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,123]DEBUG388447[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,124]DEBUG388448[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: GR(String)
+  [2016-05-04 18:34:05,124]DEBUG388448[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,124]DEBUG388448[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,124]DEBUG388448[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150909(String), 20160411(String), GR(String)
+  [2016-05-04 18:34:05,125]DEBUG388449[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,125]DEBUG388449[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,125]DEBUG388449[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PA(String)
+  [2016-05-04 18:34:05,126]DEBUG388450[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,126]DEBUG388450[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,126]DEBUG388450[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150819(String), 20160414(String), PA(String)
+  [2016-05-04 18:34:05,126]DEBUG388450[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,127]DEBUG388451[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,127]DEBUG388451[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PC(String)
+  [2016-05-04 18:34:05,127]DEBUG388451[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,127]DEBUG388451[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,128]DEBUG388452[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150908(String), 20160407(String), PC(String)
+  [2016-05-04 18:34:05,128]DEBUG388452[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,128]DEBUG388452[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,128]DEBUG388452[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PD(String)
+  [2016-05-04 18:34:05,129]DEBUG388453[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,129]DEBUG388453[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,129]DEBUG388453[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150910(String), 20160405(String), PD(String)
+  [2016-05-04 18:34:05,130]DEBUG388454[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,130]DEBUG388454[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,130]DEBUG388454[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PE(String)
+  [2016-05-04 18:34:05,130]DEBUG388454[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,131]DEBUG388455[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,131]DEBUG388455[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150910(String), 20160411(String), PE(String)
+  [2016-05-04 18:34:05,131]DEBUG388455[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,132]DEBUG388456[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,132]DEBUG388456[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PG(String)
+  [2016-05-04 18:34:05,132]DEBUG388456[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,132]DEBUG388456[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,133]DEBUG388457[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150907(String), 20160411(String), PG(String)
+  [2016-05-04 18:34:05,133]DEBUG388457[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,133]DEBUG388457[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,133]DEBUG388457[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PI(String)
+  [2016-05-04 18:34:05,134]DEBUG388458[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,134]DEBUG388458[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,134]DEBUG388458[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150903(String), 20160407(String), PI(String)
+  [2016-05-04 18:34:05,135]DEBUG388459[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,135]DEBUG388459[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,135]DEBUG388459[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PN(String)
+  [2016-05-04 18:34:05,136]DEBUG388460[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,136]DEBUG388460[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,136]DEBUG388460[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150911(String), 20160414(String), PN(String)
+  [2016-05-04 18:34:05,137]DEBUG388461[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,137]DEBUG388461[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,137]DEBUG388461[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PO(String)
+  [2016-05-04 18:34:05,138]DEBUG388462[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,138]DEBUG388462[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update amedeodateagg set datamin = ?, datamax = ? where cciaa = ? 
+  [2016-05-04 18:34:05,138]DEBUG388462[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 20150901(String), 20160405(String), PO(String)
+  [2016-05-04 18:34:05,139]DEBUG388463[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,139]DEBUG388463[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,139]DEBUG388463[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PR(String)
+  [2016-05-04 18:34:05,139]DEBUG388463[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,140]DEBUG388464[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,140]DEBUG388464[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PS(String)
+  [2016-05-04 18:34:05,140]DEBUG388464[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,141]DEBUG388465[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,141]DEBUG388465[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PT(String)
+  [2016-05-04 18:34:05,141]DEBUG388465[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,142]DEBUG388466[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,142]DEBUG388466[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PV(String)
+  [2016-05-04 18:34:05,142]DEBUG388466[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,143]DEBUG388467[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,143]DEBUG388467[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PZ(String)
+  [2016-05-04 18:34:05,143]DEBUG388467[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,144]DEBUG388468[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,144]DEBUG388468[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: AG(String)
+  [2016-05-04 18:34:05,144]DEBUG388468[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,144]DEBUG388468[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,145]DEBUG388469[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: IS(String)
+  [2016-05-04 18:34:05,145]DEBUG388469[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,145]DEBUG388469[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,146]DEBUG388470[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: AL(String)
+  [2016-05-04 18:34:05,146]DEBUG388470[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,147]DEBUG388471[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,147]DEBUG388471[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: AN(String)
+  [2016-05-04 18:34:05,147]DEBUG388471[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,148]DEBUG388472[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,148]DEBUG388472[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: AO(String)
+  [2016-05-04 18:34:05,148]DEBUG388472[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,149]DEBUG388473[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,149]DEBUG388473[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: AP(String)
+  [2016-05-04 18:34:05,149]DEBUG388473[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,150]DEBUG388474[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,150]DEBUG388474[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: RA(String)
+  [2016-05-04 18:34:05,151]DEBUG388475[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,151]DEBUG388475[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,151]DEBUG388475[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: AQ(String)
+  [2016-05-04 18:34:05,152]DEBUG388476[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,152]DEBUG388476[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,152]DEBUG388476[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: AR(String)
+  [2016-05-04 18:34:05,153]DEBUG388477[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,153]DEBUG388477[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,153]DEBUG388477[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: RC(String)
+  [2016-05-04 18:34:05,154]DEBUG388478[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,154]DEBUG388478[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,154]DEBUG388478[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: AT(String)
+  [2016-05-04 18:34:05,155]DEBUG388479[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,155]DEBUG388479[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,155]DEBUG388479[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: RE(String)
+  [2016-05-04 18:34:05,155]DEBUG388479[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,155]DEBUG388479[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,156]DEBUG388480[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: AV(String)
+  [2016-05-04 18:34:05,156]DEBUG388480[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,156]DEBUG388480[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,156]DEBUG388480[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: RI(String)
+  [2016-05-04 18:34:05,157]DEBUG388481[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,157]DEBUG388481[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,157]DEBUG388481[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: RM(String)
+  [2016-05-04 18:34:05,157]DEBUG388481[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,158]DEBUG388482[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,158]DEBUG388482[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: RN(String)
+  [2016-05-04 18:34:05,159]DEBUG388483[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,159]DEBUG388483[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,159]DEBUG388483[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: BA(String)
+  [2016-05-04 18:34:05,160]DEBUG388484[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,160]DEBUG388484[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,160]DEBUG388484[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: BG(String)
+  [2016-05-04 18:34:05,160]DEBUG388484[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,161]DEBUG388485[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,161]DEBUG388485[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: BI(String)
+  [2016-05-04 18:34:05,161]DEBUG388485[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,161]DEBUG388485[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,161]DEBUG388485[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: BL(String)
+  [2016-05-04 18:34:05,162]DEBUG388486[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,162]DEBUG388486[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,162]DEBUG388486[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: BN(String)
+  [2016-05-04 18:34:05,162]DEBUG388486[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,163]DEBUG388487[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,163]DEBUG388487[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: BO(String)
+  [2016-05-04 18:34:05,163]DEBUG388487[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,163]DEBUG388487[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,163]DEBUG388487[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: SA(String)
+  [2016-05-04 18:34:05,164]DEBUG388488[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,164]DEBUG388488[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,164]DEBUG388488[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: BR(String)
+  [2016-05-04 18:34:05,165]DEBUG388489[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,165]DEBUG388489[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,165]DEBUG388489[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: BS(String)
+  [2016-05-04 18:34:05,165]DEBUG388489[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,166]DEBUG388490[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,166]DEBUG388490[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: SI(String)
+  [2016-05-04 18:34:05,166]DEBUG388490[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,166]DEBUG388490[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,166]DEBUG388490[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: BZ(String)
+  [2016-05-04 18:34:05,167]DEBUG388491[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,167]DEBUG388491[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,167]DEBUG388491[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: SO(String)
+  [2016-05-04 18:34:05,168]DEBUG388492[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,168]DEBUG388492[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,168]DEBUG388492[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: SP(String)
+  [2016-05-04 18:34:05,169]DEBUG388493[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,169]DEBUG388493[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,169]DEBUG388493[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CA(String)
+  [2016-05-04 18:34:05,170]DEBUG388494[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,170]DEBUG388494[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,170]DEBUG388494[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CB(String)
+  [2016-05-04 18:34:05,171]DEBUG388495[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,171]DEBUG388495[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,171]DEBUG388495[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: SR(String)
+  [2016-05-04 18:34:05,171]DEBUG388495[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,172]DEBUG388496[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,172]DEBUG388496[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: SS(String)
+  [2016-05-04 18:34:05,172]DEBUG388496[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,172]DEBUG388496[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,172]DEBUG388496[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CE(String)
+  [2016-05-04 18:34:05,173]DEBUG388497[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,173]DEBUG388497[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,173]DEBUG388497[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: SV(String)
+  [2016-05-04 18:34:05,173]DEBUG388497[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,174]DEBUG388498[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,174]DEBUG388498[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CH(String)
+  [2016-05-04 18:34:05,174]DEBUG388498[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,174]DEBUG388498[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,175]DEBUG388499[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: KR(String)
+  [2016-05-04 18:34:05,175]DEBUG388499[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,175]DEBUG388499[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,176]DEBUG388500[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CL(String)
+  [2016-05-04 18:34:05,176]DEBUG388500[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,176]DEBUG388500[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,177]DEBUG388501[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CN(String)
+  [2016-05-04 18:34:05,177]DEBUG388501[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,177]DEBUG388501[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,178]DEBUG388502[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CO(String)
+  [2016-05-04 18:34:05,178]DEBUG388502[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,178]DEBUG388502[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,179]DEBUG388503[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: TA(String)
+  [2016-05-04 18:34:05,179]DEBUG388503[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,179]DEBUG388503[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,180]DEBUG388504[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CR(String)
+  [2016-05-04 18:34:05,180]DEBUG388504[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,180]DEBUG388504[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,181]DEBUG388505[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CS(String)
+  [2016-05-04 18:34:05,181]DEBUG388505[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,181]DEBUG388505[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,181]DEBUG388505[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CT(String)
+  [2016-05-04 18:34:05,182]DEBUG388506[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,182]DEBUG388506[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,182]DEBUG388506[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: TE(String)
+  [2016-05-04 18:34:05,182]DEBUG388506[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,182]DEBUG388506[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,183]DEBUG388507[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: CZ(String)
+  [2016-05-04 18:34:05,183]DEBUG388507[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,183]DEBUG388507[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,183]DEBUG388507[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: LC(String)
+  [2016-05-04 18:34:05,184]DEBUG388508[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,184]DEBUG388508[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,184]DEBUG388508[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: LE(String)
+  [2016-05-04 18:34:05,185]DEBUG388509[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,185]DEBUG388509[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,185]DEBUG388509[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: TN(String)
+  [2016-05-04 18:34:05,186]DEBUG388510[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,186]DEBUG388510[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,186]DEBUG388510[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: TO(String)
+  [2016-05-04 18:34:05,187]DEBUG388511[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,187]DEBUG388511[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,187]DEBUG388511[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: TP(String)
+  [2016-05-04 18:34:05,188]DEBUG388512[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,188]DEBUG388512[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,188]DEBUG388512[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: LI(String)
+  [2016-05-04 18:34:05,188]DEBUG388512[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,189]DEBUG388513[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,189]DEBUG388513[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: TR(String)
+  [2016-05-04 18:34:05,189]DEBUG388513[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,190]DEBUG388514[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,190]DEBUG388514[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: TS(String)
+  [2016-05-04 18:34:05,190]DEBUG388514[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,191]DEBUG388515[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,191]DEBUG388515[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: TV(String)
+  [2016-05-04 18:34:05,191]DEBUG388515[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,192]DEBUG388516[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,192]DEBUG388516[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: LT(String)
+  [2016-05-04 18:34:05,192]DEBUG388516[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,192]DEBUG388516[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,193]DEBUG388517[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: LU(String)
+  [2016-05-04 18:34:05,193]DEBUG388517[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,193]DEBUG388517[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,193]DEBUG388517[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: UD(String)
+  [2016-05-04 18:34:05,194]DEBUG388518[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,194]DEBUG388518[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,194]DEBUG388518[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: MB(String)
+  [2016-05-04 18:34:05,194]DEBUG388518[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,194]DEBUG388518[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,195]DEBUG388519[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: MC(String)
+  [2016-05-04 18:34:05,195]DEBUG388519[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,195]DEBUG388519[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,195]DEBUG388519[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: ME(String)
+  [2016-05-04 18:34:05,196]DEBUG388520[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,196]DEBUG388520[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,196]DEBUG388520[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: MI(String)
+  [2016-05-04 18:34:05,196]DEBUG388520[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,196]DEBUG388520[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,197]DEBUG388521[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: MN(String)
+  [2016-05-04 18:34:05,197]DEBUG388521[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,197]DEBUG388521[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,197]DEBUG388521[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: MO(String)
+  [2016-05-04 18:34:05,198]DEBUG388522[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,198]DEBUG388522[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,198]DEBUG388522[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: MS(String)
+  [2016-05-04 18:34:05,199]DEBUG388523[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,199]DEBUG388523[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,199]DEBUG388523[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: MT(String)
+  [2016-05-04 18:34:05,200]DEBUG388524[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,200]DEBUG388524[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,200]DEBUG388524[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: EN(String)
+  [2016-05-04 18:34:05,200]DEBUG388524[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,201]DEBUG388525[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,201]DEBUG388525[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: VA(String)
+  [2016-05-04 18:34:05,201]DEBUG388525[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,202]DEBUG388526[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,202]DEBUG388526[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: VB(String)
+  [2016-05-04 18:34:05,202]DEBUG388526[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,202]DEBUG388526[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,203]DEBUG388527[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: VC(String)
+  [2016-05-04 18:34:05,203]DEBUG388527[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,203]DEBUG388527[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,203]DEBUG388527[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: VE(String)
+  [2016-05-04 18:34:05,204]DEBUG388528[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,204]DEBUG388528[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,204]DEBUG388528[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: NA(String)
+  [2016-05-04 18:34:05,204]DEBUG388528[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,205]DEBUG388529[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,205]DEBUG388529[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: VI(String)
+  [2016-05-04 18:34:05,205]DEBUG388529[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,205]DEBUG388529[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,205]DEBUG388529[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: VR(String)
+  [2016-05-04 18:34:05,206]DEBUG388530[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,206]DEBUG388530[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,206]DEBUG388530[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: VT(String)
+  [2016-05-04 18:34:05,206]DEBUG388530[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,207]DEBUG388531[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,207]DEBUG388531[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: FE(String)
+  [2016-05-04 18:34:05,207]DEBUG388531[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,208]DEBUG388532[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,208]DEBUG388532[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: VV(String)
+  [2016-05-04 18:34:05,209]DEBUG388533[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,209]DEBUG388533[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,209]DEBUG388533[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: FG(String)
+  [2016-05-04 18:34:05,210]DEBUG388534[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,210]DEBUG388534[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,210]DEBUG388534[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: NO(String)
+  [2016-05-04 18:34:05,210]DEBUG388534[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,211]DEBUG388535[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,211]DEBUG388535[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: FI(String)
+  [2016-05-04 18:34:05,211]DEBUG388535[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,212]DEBUG388536[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,212]DEBUG388536[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: FM(String)
+  [2016-05-04 18:34:05,212]DEBUG388536[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,213]DEBUG388537[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,213]DEBUG388537[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: NU(String)
+  [2016-05-04 18:34:05,213]DEBUG388537[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,214]DEBUG388538[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,214]DEBUG388538[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: FO(String)
+  [2016-05-04 18:34:05,214]DEBUG388538[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,215]DEBUG388539[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,215]DEBUG388539[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: FR(String)
+  [2016-05-04 18:34:05,215]DEBUG388539[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,216]DEBUG388540[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,216]DEBUG388540[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: GE(String)
+  [2016-05-04 18:34:05,216]DEBUG388540[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,217]DEBUG388541[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,217]DEBUG388541[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: OR(String)
+  [2016-05-04 18:34:05,217]DEBUG388541[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,217]DEBUG388541[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,218]DEBUG388542[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: GO(String)
+  [2016-05-04 18:34:05,218]DEBUG388542[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,218]DEBUG388542[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,218]DEBUG388542[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: GR(String)
+  [2016-05-04 18:34:05,219]DEBUG388543[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,219]DEBUG388543[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,219]DEBUG388543[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PA(String)
+  [2016-05-04 18:34:05,220]DEBUG388544[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,220]DEBUG388544[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,220]DEBUG388544[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PC(String)
+  [2016-05-04 18:34:05,221]DEBUG388545[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,221]DEBUG388545[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,221]DEBUG388545[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PD(String)
+  [2016-05-04 18:34:05,222]DEBUG388546[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,222]DEBUG388546[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,222]DEBUG388546[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PE(String)
+  [2016-05-04 18:34:05,222]DEBUG388546[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,223]DEBUG388547[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,223]DEBUG388547[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PG(String)
+  [2016-05-04 18:34:05,223]DEBUG388547[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,224]DEBUG388548[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,224]DEBUG388548[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PI(String)
+  [2016-05-04 18:34:05,225]DEBUG388549[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,225]DEBUG388549[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,225]DEBUG388549[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PN(String)
+  [2016-05-04 18:34:05,226]DEBUG388550[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,226]DEBUG388550[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select cciaa, datamin, datamax from amedeodateagg where cciaa = ? 
+  [2016-05-04 18:34:05,226]DEBUG388550[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: PO(String)
+  [2016-05-04 18:34:05,227]DEBUG388551[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+  [2016-05-04 18:34:05,228]DEBUG388552[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into logelab (progrriga, datatime, pgmelab, riga) values (?, ?, ?, ?) 
+  [2016-05-04 18:34:05,229]DEBUG388553[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 2016/05/04 18:34:05(String), main(String), ----- FINE ELABORAZIONE EFFETTI -----(String)
+  [2016-05-04 18:34:05,229]DEBUG388553[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,230]DEBUG388554[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into logelab (progrriga, datatime, pgmelab, riga) values (?, ?, ?, ?) 
+  [2016-05-04 18:34:05,231]DEBUG388555[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 2016/05/04 18:34:05(String), main(String), Effetti letti...............: 60557(String)
+  [2016-05-04 18:34:05,231]DEBUG388555[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,233]DEBUG388557[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into logelab (progrriga, datatime, pgmelab, riga) values (?, ?, ?, ?) 
+  [2016-05-04 18:34:05,233]DEBUG388557[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 2016/05/04 18:34:05(String), main(String), Effetti inseriti............: 61105(String)
+  [2016-05-04 18:34:05,233]DEBUG388557[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,235]DEBUG388559[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert into logelab (progrriga, datatime, pgmelab, riga) values (?, ?, ?, ?) 
+  [2016-05-04 18:34:05,235]DEBUG388559[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: null, 2016/05/04 18:34:05(String), main(String), ----- FINE ELABORAZIONE -----(String)
+  [2016-05-04 18:34:05,236]DEBUG388560[main] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+  [2016-05-04 18:34:05,236]DEBUG388560[main] - org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:71) - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+  [2016-05-04 18:34:05,237]DEBUG388561[main] - org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit(JdbcTransaction.java:124) - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+  [2016-05-04 18:34:05,237]DEBUG388561[main] - org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:92) - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+  [2016-05-04 18:34:05,237]DEBUG388561[main] - org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:344) - Returned connection 988458918 to pool.
   
